@@ -1,44 +1,57 @@
+/*
+  time : 2017-3-6
+  author : zhengdifei
+  desc : 定义页面默认初始样式
+*/
+
+//默认字体，大小
 * {
   font-family: "微软雅黑", "Microsoft Yahei", "华文细黑", "Hiragino Sans GB", tahoma, arial, "宋体";
   box-sizing: border-box;
   font-size: 12px;
 }
 
+//block组件，无边距
 p, body, ul, li, h1, h2, h3, dl, dd {
   margin: 0;
   padding: 0;
 }
 
+//文字正常样式
 p, a, h1, h2, h3, dl, dt, dd, th, input, li, button, dl, dt, th, em, span, i {
   text-decoration: none;
   font-weight: normal;
   font-style: normal;
 }
 
+//图片，input无边框，背景色
 img, input, button, dl, dt, dd {
   border: none;
   background-color: transparent;
   list-style-type: none;
 }
 
+//无形状
 ul, li {
   list-style: none;
 }
-
+//无轮廓
 input, button {
   outline: none;
 }
 
+//特殊组件成为block样式
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary, img {
   display: block;
 }
 
-
+//table组件无边框
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+//html,body宽、高自适应
 html, body {
   height: 100%;
   min-height: 100%;

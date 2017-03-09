@@ -22,7 +22,7 @@
                     </li>
                 </ul>
                 <div class="system_box">
-                    <slot><h1 class="system_name"></h1><slot>
+                    <slot><h1 class="system_name"></h1></slot>
                 </div>
             </div>
         </div>
@@ -34,6 +34,26 @@
 </style>
 
 <script>
+    /*
+        time : 2017-3-9
+        author : zhengdifei
+        desc : header头部组件
+        data :{
+            menus : 所有系统菜单数组,
+            users : 所有用户菜单数组,
+            menuClickIndex : 系统菜单选中序号,
+            userClickIndex : 用户菜单选中序号
+        }
+        props : {
+            system_menus : 所有系统菜单数组
+            user_menus : 所有用户菜单数组
+        }
+        methods : {
+            menuClick: 对于mutations的MENU_CLICK_INDEX,
+            userClick: 对于mutations的USER_CLICK_INDEX
+        }
+
+    */
     import { mapState,mapMutations } from 'vuex'
     import { MENU_CLICK_INDEX ,USER_CLICK_INDEX} from 'store/types'
 

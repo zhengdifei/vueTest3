@@ -1,5 +1,7 @@
 /**
- * Created by Administrator on 2017/3/8 0008.
+ * time : 2017/3/8 0008.
+ * author : zhengdifei
+ * desc : 对vue-resource的封装
  */
 import Vue from 'vue'
 import VueResource from 'vue-resource'

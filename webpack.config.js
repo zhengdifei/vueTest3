@@ -1,9 +1,10 @@
 /**
- * Created by Administrator on 2017/1/1 0001.
+ * time : 2017/1/1 0001.
+ * author : zhengdifei
+ * desc : webpack1 打包配置文件
  */
 var webpack = require('webpack')
 var path = require('path')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module .exports ={
     entry : [

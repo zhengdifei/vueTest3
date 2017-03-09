@@ -1,5 +1,7 @@
 /**
- * Created by Administrator on 2017/3/6 0006.
+ * time : 2017/3/6 0006.
+ * author : zhengdifei
+ * desc : vue-router的加载配置
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'

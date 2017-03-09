@@ -1,15 +1,23 @@
+/*
+  time : 2017-3-9
+  author : zhengdifei
+  desc : header组件的样式
+*/
+//引入通用样式、字体样式
 @import "../scss/common";
 @import "../scss/font";
 
-$header_height : 76px;
-$header_bcolor :  #28578d;
-$header_border_bottom_color : #133254;
-$border_one : solid 1px #163457;
-$border_two : solid 1px #416fa3;
-$text_shadow_color : #001834;
-$menu_font_color : #18ebff;
-$menu_width : 92px;
-$hover_color : #3dff6f;
+$header_height : 76px;//头部高度
+$header_bcolor :  #28578d;//头部背景色
+$header_border_bottom_color : #133254;//头部边框颜色
+$border_one : solid 1px #163457;//菜单项边框一颜色
+$border_two : solid 1px #416fa3;//菜单项边框二颜色
+$text_shadow_color : #001834;//文字背景色
+$menu_font_color : #18ebff;//菜单文字颜色
+$menu_width : 92px;//菜单项宽度
+$hover_color : #3dff6f;//鼠标悬浮颜色
+
+//系统菜单点击颜色
 @mixin menu_click_style($bcoloer : #1e4b7e) {
   border-bottom:solid 2px $hover_color;
   border-left:solid 1px #4a79a1;
@@ -21,6 +29,7 @@ $hover_color : #3dff6f;
   -webkit-shadow: inset 0px 8px 20px 4px rgba(7,44,87,0.8), inset 0px 0px 20px 4px rgba(7,44,87,0.2);
 }
 
+//系统菜单点击颜色
 @mixin user_click_style($bcoloer : #1e4b7e) {
   background-color:$bcoloer;
   box-shadow: inset 0px 8px 20px 4px rgba(7,44,87,0.8), inset 0px 0px 20px 4px rgba(7,44,87,0.2);
@@ -28,6 +37,7 @@ $hover_color : #3dff6f;
   -webkit-box-shadow: inset 0px 8px 20px 4px rgba(7,44,87,0.8), inset 0px 0px 20px 4px rgba(7,44,87,0.2);
 }
 
+//头部导航结构
 .nav_box{
   width: 100%;
   height: $header_height;
@@ -42,6 +52,7 @@ $hover_color : #3dff6f;
   }
 }
 
+//logo样式
 .logo {
   float : left;
   width: 149px;
@@ -50,6 +61,7 @@ $hover_color : #3dff6f;
   margin-top: 16px;
 }
 
+//系统菜单box
 .menu_box {
   float: left;
   margin-left: 36px;
@@ -94,10 +106,12 @@ $hover_color : #3dff6f;
     }
   }
 }
+//菜单项选中
 .menu_click {
   @include menu_click_style
 }
 
+//用户菜单box
 .user_box {
   float: left;
   border-left: $border_one;
@@ -146,11 +160,14 @@ $hover_color : #3dff6f;
       }
     }
   }
+
+  //用户菜单点击
   .user_click {
     @include user_click_style
   }
 }
 
+//系统名称部分box
 .system_box {
   float: right;
   width: 200px;
@@ -167,10 +184,3 @@ $hover_color : #3dff6f;
     margin:30px auto;
   }
 }
-
-
-
-
-
-
-

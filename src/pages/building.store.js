@@ -1,5 +1,16 @@
 /**
- * Created by Administrator on 2017/3/8 0008.
+ * time : 2017/3/8 0008.
+ * author : zhengdifei
+ * desc : Building的状态管理
+ * state : {
+ *      data : 存储所有楼宇信息
+ * }
+ * mutations : {
+ *      ADD_TO_BUILDING : 给data赋值
+ * }
+ * actions : {
+ *      BUILDING_INIT : ajax请求，获取楼宇详细信息
+ * }
  */
 import {ADD_TO_BUILDING,BUILDING_INIT} from 'store/types'
 import ajax from 'ajax'

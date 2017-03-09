@@ -9,6 +9,21 @@
     </div>
 </template>
 <script>
+    /*
+        time : 2017-3-7
+        author:zhengdifei
+        desc:框架结构页面
+        components : {
+            'v-header' : 头部组件,
+            'v-content' : 内容组件,
+            'v-footer' : 尾部组件,
+            'v-loading' : 加载组件
+        }
+        data : {
+            system_menus : 系统菜单项
+            user_menus : 用户菜单项
+        }
+    */
     import header from 'components/header/index.vue'
     import content from 'components/content.vue'
     import footer from 'components/footer.vue'

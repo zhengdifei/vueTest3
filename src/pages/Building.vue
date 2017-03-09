@@ -280,6 +280,17 @@
     }
 </style>
 <script>
+    /*
+        time : 2017-03-09
+        author : zhengdifei
+        desc : 建筑物信息管理
+        data : {
+            buildings : 所有建筑物数据集合
+        }
+        methods : {
+            initBuilding : 调用store里面action，获取楼宇数据
+        }
+    */
     import ajax from 'ajax'
     import {mapState,mapActions} from 'vuex'
     import {BUILDING_INIT} from 'store/types'
@@ -288,21 +299,8 @@
         computed : mapState({
             buildings : state => state.building.data
         }),
-        watch : {
-            buildings : function(val,oldVal){
-                console.log(val)
-                console.log(oldVal)
-            }
-        },
         created(){
            this.initBuilding()
-            /*var me = this
-            ajax.get({'command':'T_EMANAGE_BUILDING.selectAll'})
-                .then(function(response){
-                    me.buildings = response.body.data
-                },function(response){
-                    console.log(response)
-                })*/
         },
         methods : {
             ...mapActions({

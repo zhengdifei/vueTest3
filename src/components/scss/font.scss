@@ -1,3 +1,10 @@
+/*
+  time : 2017-3-7
+  author : zhengidfei
+  desc : 加载字体文件样式
+*/
+
+//字体类，定义名称icon
 @font-face {
   font-family: 'icon';
   font-style: normal;
@@ -9,6 +16,7 @@
   url(../scss/fonts/icon.svg#entypo) format('svg');
 }
 
+//icon前样式
 .icon:before {
   font-family: 'icon';
   font-style: normal;
@@ -19,6 +27,7 @@
   font-smooth: antialiased;
 }
 
+//定义menu菜单图标样式
 .icon_menu1:before{ content: "\0021";}
 .icon_menu2:before{ content: "\0022";}
 .icon_menu3:before{ content: "\0023";}

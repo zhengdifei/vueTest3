@@ -20,12 +20,14 @@
     </div>
 </template>
 <style lang="scss">
+    //loading样式
     .loading_show{
         display: block;
     }
     .loading_hidden{
          display: none;
      }
+    //核心样式
     .loader {
         position: fixed;
         overflow: hidden;
@@ -147,6 +149,14 @@
     }
 </style>
 <script>
+    /*
+        time : 2017-3-9
+        author : zhengdifei
+        desc : 定义loading组件
+        data : {
+            show : 是否显示loading
+        }
+    */
     import { mapState } from 'vuex'
 
     export default{

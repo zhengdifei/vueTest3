@@ -1,5 +1,6 @@
 /**
- * Created by Administrator on 2017/1/1 0001.
+ * time : 2017/1/1 0001.
+ * desc : webpack打包的入口文件
  */
 import Vue from 'vue'
 import App from './app.vue'

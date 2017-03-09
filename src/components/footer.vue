@@ -21,6 +21,14 @@
     }
 </style>
 <script>
+    /*
+        time : 2017-3-9
+        author : zhengdifei
+        desc : 尾部组件
+        data : {
+            msg : 显示版权信息
+        }
+    */
     export default{
         data(){
             return{
