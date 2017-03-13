@@ -13,6 +13,7 @@ import Vuex from 'vuex'
 import header from 'components/header/header.store'
 import loading from 'components/loading.store'
 import building from 'pages/Building.store'
+import buildStatis from 'pages/elec/analysis/buildStatis.store'
 
 Vue.use(Vuex)
 
@@ -20,6 +21,7 @@ export default new Vuex.Store({
     modules : {
         header : header,
         loading : loading,
-        building : building
+        building : building,
+        buildStatis : buildStatis
     }
 })

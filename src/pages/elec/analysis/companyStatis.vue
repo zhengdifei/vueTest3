@@ -1,17 +1,13 @@
 <template>
-    <div>
-        <div>this is template body,{{msg}}</div>
-        <div>
-            <v-widget></v-widget>
-        </div>
-    </div>
+    <v-widget>
+        <span slot="title">按单位统计用电量</span>
+        <span slot="content">单位统计报表</span>
+    </v-widget>
 </template>
+<style lang="scss">
+
+</style>
 <script>
-    /*
-        time : 2017-3-9
-        author : zhengdifei
-        desc : 首页
-    */
     import widget from 'components/widget.vue'
 
     export default{

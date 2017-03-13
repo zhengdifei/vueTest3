@@ -8,6 +8,10 @@
         <v-loading></v-loading>
     </div>
 </template>
+<style lang="scss">
+    @import "scss/common";
+    @import "scss/font";
+</style>
 <script>
     /*
         time : 2017-3-7
@@ -38,7 +42,7 @@
         },
         data(){
             return{
-                system_menus : [{title:'首页',url:'/'},{title:'能源供应',url:'/building'},{title:'设备管理',url:'/home1'},{title:'用能管理',url:'/home1'},{title:'耗能分析',url:'/home1'}],
+                system_menus : [{title:'首页',url:'/'},{title:'能源供应',url:'/Building'},{title:'设备管理',url:'/home1'},{title:'用能管理',url:'/home1'},{title:'耗能分析',url:'/ElecAnalysis'}],
                 user_menus : [{title:'系统管理',url:'/'},{title:'报警信息',url:'/'},{title:'用户信息',url:'/'}]
             }
         }

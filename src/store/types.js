@@ -15,3 +15,7 @@ export const LOADING_HIDDEN = 'LOADING_HIDDEN'
 //建筑物状态
 export const ADD_TO_BUILDING = 'ADD_TO_BUILDING'
 export const BUILDING_INIT = 'BUILDING_INIT'
+
+//按楼统计本月和上月的用电量
+export const BUILDSTATIS_DATA = 'BUILDSTATIS_DATA'
+export const BUILDSTATIS_INIT = 'BUILDSTATIS_INIT'

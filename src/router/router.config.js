@@ -4,16 +4,21 @@
  * desc : 配置所有系统的访问路径
  * path : {
  *      / : 首页,
- *      /building : 建筑物管理页
+ *      /Building : 建筑物管理页,
+ *      /ElecAnalysis : 用电统计分析
  * }
  */
 import Home from 'pages/Home.vue'
 import Building from 'pages/Building.vue'
+import ElecAnalysis from 'pages/elec/analysis/index.vue'
 
 export default [{
     path : '/',
     component : Home
 },{
-    path : '/building',
+    path : '/Building',
     component : Building
+},{
+    path : '/ElecAnalysis',
+    component : ElecAnalysis
 }]

@@ -6,8 +6,6 @@
     </footer>
 </template>
 <style lang="scss">
-    @import "scss/common";
-
     .bottom {
         color: #a7daff;
         border-top: solid 2px #105b8f;

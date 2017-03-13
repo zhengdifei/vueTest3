@@ -3,6 +3,11 @@
         <slot>{{msg}}</slot>
     </main>
 </template>
+<style lang="scss">
+    .content {
+        background: url(images/bg.jpg);
+    }
+</style>
 <script>
     /*
         time : 2017-3-7
